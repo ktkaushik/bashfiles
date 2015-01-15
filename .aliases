@@ -1,0 +1,43 @@
+
+# Easing life
+alias 'reload'='source ~/.bash_profile'
+alias jsc='/System/Library/Frameworks/JavaScriptCore.framework/Versions/Current/Resources/jsc'
+# Start the postgresql server !
+alias 'pg_start'='postgres -D /usr/local/var/postgres'
+
+# Aliases for the important folders !
+alias 'dev'='cd ~/dev/'
+alias 'ofc'='cd ~/dev/office/'
+alias 'myr'='cd ~/dev/my_repos/'
+alias 'frk'='cd ~/dev/forked_repos/'
+alias 'road'='cd ~/dev/my_repos/Roadmojo'
+alias 'duc'='cd ~/dev/my_repos/duct'
+alias 'ssh_rm'='ssh root@106.187.103.118'
+alias 'fr'='cd ~/dev/free'
+
+# Quick dev
+alias 'rs'='rails server'
+alias 'rc'='rails console'
+alias 'lun'='npm unlink $2 && npm link $2'
+
+# Alias for rlwrap for node's REPL - Read, Eval, Print, Loop !
+alias 'node'="env NODE_NO_READLINE=1 rlwrap -ppurple node"
+
+# Alias for Git
+alias 'gs'='git status'
+alias 'gp'='git push'
+alias 'gph'='git push heroku master'
+alias 'gac'='git add . && git commit -m $2'
+alias 'gc'='git commit -m $2'
+alias 'gpoh'='git push origin master && git push heroku master'
+alias 'gl'="git log --graph --all --format=format:'%C(bold yellow)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(bold white)— %an%C(reset)' --abbrev-commit"
+alias 'gsl'='git shortlog --summary --numbered --all | cat -n'
+
+# Alias for Grunt
+alias 'ggc'='grunt && grunt connect'
+alias 'grs'='grunt server'
+alias 'ggs'='grunt && grunt server'
+alias 'gw'='grunt watch'
+
+# for borwserify
+ulimit -n 2560
